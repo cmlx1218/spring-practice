@@ -3,6 +3,7 @@ package com.tt.spring.annotation.aop.annotation;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint;
 import org.springframework.stereotype.Component;
 
@@ -19,6 +20,13 @@ import java.util.Date;
 @Component
 public class CoverTimeAop {
 
+    @Pointcut("@annotation(com.tt.spring.annotation.aop.annotation.CoverTime)")
+    public void coverTimePointCut() {
+
+    }
+
+
+    //    @Before("coverTimePointCut()")
     @Before(value = "@annotation(coverTime)")
     public void coverTime(JoinPoint joinPoint, CoverTime coverTime) throws Throwable {
 
