@@ -10,6 +10,7 @@
 
     <modules>
         <module>annotation-practice</module>
+        <module>lock-practice</module>
     </modules>
 
 
@@ -36,6 +37,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
+            <version>${version.springboot}</version>
+        </dependency>
+
+        <!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
             <version>${version.springboot}</version>
         </dependency>
     </dependencies>
