@@ -1,2 +1,13 @@
 server:
   port: 8081
+
+annotation:
+  jdbc:
+    default-data-source:
+      name: "default"
+      base-url: "jdbc:mysql://39.96.178.201:3306"
+      db: "practice_springboot"
+      search-url: "serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf8"
+      driver-class-name: "com.mysql.cj.jdbc.Driver"
+      username: "root"
+      password: "123456"
