@@ -30,6 +30,6 @@ spring:
 #      driver-class-name: "com.mysql.cj.jdbc.Driver"
 #      username: "root"
 #      password: "123456"
-mybatis:
-  mapper-locations: "classpath:mapper/*.xml"
-  type-aliases-package: com.tt.spring.annotation.test.pojo.dto
+#mybatis:
+#  mapper-locations: "classpath:mapper/*.xml"
+#  type-aliases-package: com.tt.spring.annotation.test.pojo.dto

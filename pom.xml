@@ -12,6 +12,7 @@
     <modules>
         <module>annotation-practice</module>
         <module>lock-practice</module>
+        <module>demo</module>
     </modules>
 
 
@@ -22,19 +23,15 @@
         <version.mysql>8.0.19</version.mysql>
         <version.druid>1.1.20</version.druid>
         <version.springboot.mybatis>2.1.2</version.springboot.mybatis>
+        <version.mybatis.plus>3.3.1</version.mybatis.plus>
+        <version.springboot.druid>1.1.22</version.springboot.druid>
+        <version.commons-lang3>3.9</version.commons-lang3>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${version.springboot}</version>
-            <type>pom</type>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
             <version>${version.springboot}</version>
         </dependency>
 
@@ -61,11 +58,16 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${version.mysql}</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${version.mybatis.plus}</version>
+        </dependency>
 
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>${version.druid}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${version.springboot}</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -79,22 +81,22 @@
             <version>${version.springboot}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-            <version>${version.springboot}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-jdbc</artifactId>-->
+<!--            <version>${version.springboot}</version>-->
+<!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.10</version>
+            <version>${version.springboot.druid}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.2.3</version>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${version.commons-lang3}</version>
         </dependency>
 
     </dependencies>

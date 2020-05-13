@@ -33,7 +33,6 @@ public class MultiDataSourceController {
     @RequestMapping("/getPerson")
     public PersonDto getPerson(@NotNull Integer id) {
         return iPersonService.getPerson(id);
-
     }
 
 }
